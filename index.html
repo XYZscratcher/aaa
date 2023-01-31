@@ -38,6 +38,10 @@
     }
   </style>
   <style type="x-css" id="style-code">
+    /* 让一切元素皆有动画 */
+    *, *::before, *::after{
+      transition: all 600ms;
+    }
     /* 先搞一个写代码的pre元素 */
     pre {
       color: white;
@@ -50,7 +54,6 @@
       padding: 24px 16px;
       margin-top: 0;
       overflow-y: auto;
-      transition: all 600ms;
     }
     /* 没有语法高亮怎么行呢？ */
     .selector, .selector .key {
@@ -80,28 +83,29 @@
         top: 0;
         left: 50%;
         height: 100%;
+        width: 50%;
       }
     }
     /* */
     #heart {
       background-color: red;
+      width: 100px;
+      height: 200px;
       position: absolute;
       left: 20%;
       border-radius: 100em;
-      width: 100px;
-      height: 200px;
       -webkit-transform: rotate(-40deg);
     }
     #heart::before {
       content: "";
-      background-color: red;
-      border-radius: 100em;
       display: block;
       position: absolute;
+      background-color: red;
       left: 50px;
       top: 41px;
       width: 100px;
       height: 200px;
+      border-radius: 100em;
       -webkit-transform: rotate(80deg);
     }
   </style>
