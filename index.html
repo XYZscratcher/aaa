@@ -9,7 +9,7 @@
     content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
   <title></title>
   <link rel="shortcut icon" type="image/x-icon" href="https://gw.alipayobjects.com/zos/k/vx/favicon.svg" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">-->
 
   <!--<meta name="title" content="祝你 1024 节日快乐" />
     <meta name="author" content="Tw93" />
@@ -36,8 +36,17 @@
       font-size: 16px;
       line-height: 1.6;
     }
+
+    #text {
+      display: none;
+    }
   </style>
   <style type="x-css" id="style-code">
+    /**
+     * 今天是“三八”妇女节，是世界所有妇女共同的节日。
+     * 为了纪念这个节日，我将别人的程序稍作改编，也算是我给您的微不足道的“三八”妇女节礼物了。
+     * 现在，让我们开始吧！Let's go!
+     **/
     /* 让一切元素皆有动画 */
     *, *::before, *::after{
       transition: all 600ms;
@@ -74,7 +83,7 @@
     }
     /* 把写代码的地方挪个位置 */
     pre {
-      top: 42%;
+      top: 54%;
       height: 58%;
     }
     /* 还是挪到右边吧，如果不是手机端的话:) */
@@ -86,7 +95,7 @@
         width: 50%;
       }
     }
-    /* */
+    /* 接下来是重头戏！我将要画一个爱心 */
     #heart {
       background-color: red;
       width: 120px;
@@ -107,6 +116,26 @@
       height: 200px;
       border-radius: 100em 100em 0 0;
       -webkit-transform: rotate(90deg);
+    }
+    /* 爱心画好以后，还有一个“压轴大戏”！期待吗？ */
+    /* 3...
+       2...
+       1...
+       骗你的！（才怪
+      */
+    #text{
+      display: block;
+      text-align: center;
+      position: absolute;
+      left: 13vw;
+      top: 205px;
+      font-size: 26px;
+      font-family: '杨任东竹石体';
+    }
+    #text>#special {
+        font-weight: bold;
+        font-size: 36px;
+        color: red;
     }
   </style>
 </head>

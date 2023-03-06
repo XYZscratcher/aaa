@@ -57,7 +57,12 @@ document.body.insertAdjacentHTML(
     'beforeend',
     `\<style id="style-tag"></style>
           <div id="heart"></div>
+          <div id="text">
+          <p>妈妈，</p>
+          <p>祝您“三八”妇女节快乐，</p>
+          <p id="special">永远开心，永远漂亮！</p>
+          </div>
          <pre id="style-text"></pre>\
 `,
 );
-writeStyles(styles, 0, isdev ? 16 : 30);
+writeStyles(styles, 0, isdev ? 1 : 30);
