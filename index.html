@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#FFF" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport"
+    content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title></title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://gw.alipayobjects.com/zos/k/vx/favicon.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+
+  <!--<meta name="title" content="祝你 1024 节日快乐" />
+    <meta name="author" content="Tw93" />
+    <meta property="og:title" content="祝你 1024 节日快乐" />
+    <meta property="og:description" content="用代码画一个 Github 章鱼猫庆祝下吧~"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tw93.netlify.app" />
+    <meta property="og:image" content="https://tw93.netlify.app/img/1024-logo.png"/>
+
+    <meta name="twitter:creator" content="@HiTw93" />
+    <meta name="twitter:site" content="https://tw93.netlify.app" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tw93.netlify.app" />
+    <meta property="twitter:image" content="https://tw93.netlify.app/img/1024-banner.png" />
+    <meta property="twitter:title" content="祝你 1024 节日快乐" />
+    <meta property="twitter:description" content="用代码画一个 Github 章鱼猫庆祝下吧~" />-->
+
+  <style>
+    body {
+      height: 100vh;
+      color: #fff;
+      background: #15141a;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+  <style type="x-css" id="style-code">
+    /* 让一切元素皆有动画 */
+    *, *::before, *::after{
+      transition: all 600ms;
+    }
+    /* 先搞一个写代码的pre元素 */
+    pre {
+      color: white;
+      width: 100%;
+      height: 100%;
+      font-family: 'Fira Code VF', 'Fira Code', Consolas, 'Courier New', monospace;
+      position: absolute;
+      top: 0;
+      box-sizing: border-box;
+      padding: 24px 16px;
+      margin-top: 0;
+      overflow-y: auto;
+    }
+    /* 没有语法高亮怎么行呢？ */
+    .selector, .selector .key {
+      color: #ffef94;
+    }
+
+    .key {
+      color: aqua;
+    }
+
+    .comment {
+      font-style: italic;
+      color: greenyellow;
+    }
+
+    .value {
+      color: #f39b29;
+    }
+    /* 把写代码的地方挪个位置 */
+    pre {
+      top: 42%;
+      height: 58%;
+    }
+    /* 还是挪到右边吧，如果不是手机端的话:) */
+    @media (width>420px) {
+      pre {
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 50%;
+      }
+    }
+    /* */
+    #heart {
+      background-color: red;
+      width: 100px;
+      height: 200px;
+      position: absolute;
+      left: 20%;
+      border-radius: 100em;
+      -webkit-transform: rotate(-40deg);
+    }
+    #heart::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: red;
+      left: 50px;
+      top: 41px;
+      width: 100px;
+      height: 200px;
+      border-radius: 100em;
+      -webkit-transform: rotate(80deg);
+    }
+  </style>
+</head>
+
+<body>
+  <script src="./write.js"></script>
+</body>
+
+</html>
