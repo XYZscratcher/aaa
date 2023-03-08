@@ -65,4 +65,4 @@ document.body.insertAdjacentHTML(
          <pre id="style-text"></pre>\
 `,
 );
-writeStyles(styles, 0, isdev ? 1 : 30);
+writeStyles(styles, 0, isdev ? 1 : 40);
